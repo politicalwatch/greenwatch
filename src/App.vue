@@ -10,7 +10,7 @@
       @filter-party="filterParty"
       @filter-place="filterPlace"
       />
-    <div class="downloads" v-if="filteredEntries.length > 0">
+    <div class="downloads" v-if="filteredEntries.length">
       <vue-csv-downloader
         :data="filteredEntries"
         :fields="csvFields"

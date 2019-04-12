@@ -1,8 +1,7 @@
 <template>
   <div class="listing-wrapper">
     <h4 class="loading" v-if="!entries.length && !loadedData">Cargando datos</h4>
-    <h4 class="loading" v-if="!entries.length && loadedData">Aún no hay declaraciones registradas durante la campaña. <br>
-      Entra en <a href="http://www.poletika.org">www.poletika.org</a> y ayúdanos a pedir un compromiso público al respecto</h4>
+    <h4 class="loading" v-if="!entries.length && loadedData">Aún no hay declaraciones registradas durante la campaña.</h4>
     <ul class="listing">
       <li class="listing__item" v-for="(entry, i) in entries" :key="i">
         <p class="listing__author">
