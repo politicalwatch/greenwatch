@@ -1,0 +1,46 @@
+@import "~normalize.css/normalize.css";
+
+$primary: #2ab20b;
+$secondary: darken($primary, 5%);
+$white: #f8f8f8;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: #d4ebf2;
+}
+
+#app {
+  margin: 0 auto;
+  max-width: 1000px;
+  max-height: 100%;
+  background: $white;
+}
+
+h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.3em;
+  background-color: $primary;
+  border-bottom: 5px solid $secondary;
+  margin: 0px;
+  padding: 0.67em 0;
+  font-weight: normal;
+  color: #ffffff;
+}
+p.headline {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+}
