@@ -23,7 +23,7 @@
       :loadedData="loadedData"
     />
     <footer>
-      <img class="watch" src="./assets/politicalwatch.png"> <img class="green" src="./assets/greenpeace.svg"/>
+      <a href="http://politicalwatch.es" target="_blank"><img class="watch" src="./assets/politicalwatch.png"></a> <a href="http://greenpeace.es" target="_blank"><img class="green" src="./assets/greenpeace.svg"/></a>
     </footer>
   </div>
 </template>
