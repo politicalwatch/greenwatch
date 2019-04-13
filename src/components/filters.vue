@@ -26,6 +26,7 @@
         <option value="Vox">Vox</option>
         <option value="ERC">ERC</option>
         <option value="JxCat">JxCat</option>
+        <option value="PNV">PNV</option>
         <option value="Compromís">Compromís</option>
         <option value="Coalición Canaria">Coalición Canaria</option>
         <option value="PRC">PRC</option>
