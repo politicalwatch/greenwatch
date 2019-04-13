@@ -116,6 +116,11 @@ export default {
         float: right;
       }
     }
+    @media (max-width: 599px) {
+      img {
+        height: 20px;
+      }
+    }
   }
 
   .downloads {
