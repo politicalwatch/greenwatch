@@ -8,7 +8,6 @@
     <filters
       @filter-topic="filterTopic"
       @filter-party="filterParty"
-      @filter-place="filterPlace"
       />
     <div class="downloads" v-if="filteredEntries.length">
       <vue-csv-downloader
@@ -52,12 +51,10 @@ export default {
         "candidate",
         "statement",
         "source",
-        "date",
-        "place"
+        "date"
       ],
       selected_topic: '',
       selected_party: '',
-      selected_place: '',
       params: [],
       loadedData: 0,
     };
@@ -65,7 +62,7 @@ export default {
 
   computed: {
     filteredEntries() {
-      return this.entries.filter(entry => entry.topic.includes(this.selected_topic) && entry.party.includes(this.selected_party) && entry.place.includes(this.selected_place));
+      return this.entries.filter(entry => entry.topic.includes(this.selected_topic) && entry.party.includes(this.selected_party));
     },
   },
 
@@ -75,9 +72,6 @@ export default {
     },
     filterParty(value) {
       this.selected_party = value;
-    },
-    filterPlace(value) {
-      this.selected_place = value;
     },
     getNameFromCSV: function() {
       const d = new Date();

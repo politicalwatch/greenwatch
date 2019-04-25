@@ -18,60 +18,12 @@
         name="candidates"
         @change="$emit('filter-party', $event.target.value)"
       >
-        <option value="">Todos los partidos</option>
-        <option value="Partido Popular">Partido Popular</option>
-        <option value="Partido Socialista">Partido Socialista</option>
-        <option value="Unidas Podemos">Unidas Podemos</option>
-        <option value="Ciudadanos">Ciudadanos</option>
-        <option value="Vox">Vox</option>
-        <option value="ERC">ERC</option>
-        <option value="JxCat">JxCat</option>
-        <option value="PNV">PNV</option>
-        <option value="Compromís">Compromís</option>
-        <option value="Coalición Canaria">Coalición Canaria</option>
-        <option value="PRC">PRC</option>
-        <option value="BNG">BNG</option>
-        <option value="Geroa Bai">Geroa Bai</option>
-      </select>
-    </div>
-
-    <div class="styled-select">
-      <select
-          name="place"
-        @change="$emit('filter-place', $event.target.value)"
-      >
-        <option value="">Todas los territorios</option>
-        <option value="Álava">Álava</option>
-        <option value="Almería">Almería</option>
-        <option value="Ávila">Ávila</option>
-        <option value="Baleares">Baleares</option>
-        <option value="Barcelona">Barcelona</option>
-        <option value="Cádiz">Cádiz</option>
-        <option value="Canarias">Canarias</option>
-        <option value="Cantabria">Cantabria</option>
-        <option value="Castellón">Castellón</option>
-        <option value="Cataluña">Cataluña</option>
-        <option value="Ciudad ">Ciudad Real</option>
-        <option value="Comunidad ">Comunidad Valenciana</option>
-        <option value="Córdoba">Córdoba</option>
-        <option value="Cuenca">Cuenca</option>
-        <option value="Galicia">Galicia</option>
-        <option value="Guadalajara">Guadalajara</option>
-        <option value="Guipúzcua">Guipúzcua</option>
-        <option value="Huesca">Huesca</option>
-        <option value="Lleida">Lleida</option>
-        <option value="Madrid">Madrid</option>
-        <option value="Murcia">Murcia</option>
-        <option value="Navarra">Navarra</option>
-        <option value="Presidente ">Presidente del Partido</option>
-        <option value="País ">País Vasco</option>
-        <option value="Pontevedra">Pontevedra</option>
-        <option value="Sevilla">Sevilla</option>
-        <option value="Teruel">Teruel</option>
-        <option value="Toledo">Toledo</option>
-        <option value="Valencia">Valencia</option>
-        <option value="Valladolid">Valladolid</option>
-        <option value="Zaragoza">Zaragoza</option>
+        <option value="">Todos los candidatos</option>
+        <option value="Partido Popular">Casado, Pablo</option>
+        <option value="Partido Socialista">Sánchez, Pedro</option>
+        <option value="Unidas Podemos">Iglesias, Pablo</option>
+        <option value="Ciudadanos">Rivera, Albert</option>
+        <option value="Vox">Abascal, Santiago</option>
       </select>
     </div>
 
@@ -83,8 +35,7 @@ export default {
   name: 'filters',
   props: [
     'topics',
-    'parties',
-    'places',
+    'parties'
   ],
 };
 </script>
